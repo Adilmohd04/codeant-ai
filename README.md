@@ -1,4 +1,3 @@
-```markdown
 # CodeAnt AI
 
 CodeAnt AI is a modern, responsive web application built with ReactJS, HTML, and CSS. It is designed to deliver a seamless and user-friendly experience, focusing on functionality and adherence to best practices.
