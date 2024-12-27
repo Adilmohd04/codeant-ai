@@ -22,10 +22,16 @@ const MainContent: React.FC = () => {
   );
 
   return (
-    <main className="flex-grow bg-gray-100 p-4">
-      {/* Container with white background */}
-      <div className="bg-white p-4 rounded-lg shadow-md">
-        {/* Header */}
+    <main className="h-screen flex flex-col bg-gray-100">
+      <div
+        className="flex-grow bg-white p-4 rounded-lg shadow-md overflow-y-auto"
+        style={{
+          scrollbarWidth: "none", 
+          msOverflowStyle: "none", 
+        }}
+      >
+      
+
         <div className="flex flex-col gap-2 md:flex-row md:justify-between mb-4">
           <div className="flex flex-col gap-0.5">
             <div className="text-2xl font-medium">Repositories</div>
@@ -52,7 +58,6 @@ const MainContent: React.FC = () => {
           </div>
         </div>
 
-        {/* Search bar */}
         <div className="flex items-center border border-borderGray mt-2 p-0.5 rounded-md md:w-1/3 bg-white shadow-sm">
           <div className="scale-[1.5] px-2">
             <IoIosSearch />
@@ -66,8 +71,7 @@ const MainContent: React.FC = () => {
           />
         </div>
 
-        {/* Repository List */}
-        <div className="md:m-4 md:rounded-xl md:border bg-white overflow-scroll hidden-scrollbar webkit-scrollbar">
+        <div className="mt-4">
           {filteredRepos.length > 0 ? (
             filteredRepos.map((repo) => <RepoCard key={repo.id} {...repo} />)
           ) : (

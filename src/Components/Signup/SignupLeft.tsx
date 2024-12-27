@@ -25,7 +25,7 @@ export default function SignupLeft() {
       <img
         src={logo}
         alt="logo"
-        className="absolute -left-4 bottom-0 w-[284px] h-[319px] aspect-square opacity-40 cursor-pointer"
+        className="absolute -left-4 bottom-0 w-[284px] h-[319px] aspect-square opacity-20 cursor-pointer"
       />
       <div className="main-card w-[400px] shadow-custom rounded-3xl relative top-[-130px]"> 
         <div>
