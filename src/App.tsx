@@ -4,12 +4,12 @@ import Signup from "./Signup";
 
 function App() {
   return (
-    <>
+    
       <Routes>
         <Route path="/" element={<Signup />} />
         <Route path="/home" element={<Home />} />
       </Routes>
-    </>
+    
   );
 }
 
